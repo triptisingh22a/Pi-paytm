@@ -1,0 +1,17 @@
+{
+  "test": "One short TTS followed by STT of that same WAV; no retries or chat calls.",
+  "input_text": "Munshi voice is ready.",
+  "characters": 22,
+  "tts": {
+    "app_http_status": 422,
+    "elapsed_ms": 55.3,
+    "model": "bulbul:v3",
+    "safe_error": "Sarvam voice connection failed. No retry was made."
+  },
+  "stt": {
+    "skipped": "TTS failed; no additional request was made"
+  },
+  "live_calls_attempted": 1,
+  "limitations": "Generated English audio roundtrip only. Microphone, Hinglish, Marathi/Hindi and real bill-asking accuracy are not verified.",
+  "status": "NOT_VERIFIED"
+}

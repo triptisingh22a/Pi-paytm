@@ -1,0 +1,51 @@
+{
+  "recovery": [
+    {
+      "persona": "kirana",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.7667,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.0904,
+      "verdict": "DON'T"
+    },
+    {
+      "persona": "sweets",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.826,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.1042,
+      "verdict": "DO"
+    },
+    {
+      "persona": "electronics",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.7494,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.0723,
+      "verdict": "DO"
+    },
+    {
+      "persona": "vegetables",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.76,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.091,
+      "verdict": "DON'T"
+    }
+  ],
+  "chart": [
+    {
+      "name": "Planted",
+      "uplift": 0.8
+    },
+    {
+      "name": "Matched control",
+      "uplift": 0.7494
+    },
+    {
+      "name": "Naive pre/post",
+      "uplift": 2.6
+    }
+  ],
+  "note": "Recovery tolerance: 0.15 uplift and 0.10 pull-forward. Naive example assumes a 2\u00d7 festival baseline; it is illustrative, not a measured benchmark."
+}

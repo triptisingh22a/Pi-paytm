@@ -1,0 +1,567 @@
+{
+  "verdict": "SCENARIO",
+  "remove": "Cream pasta",
+  "replace": "Paneer grain bowl",
+  "remove_id": "restaurant-09",
+  "replace_id": "restaurant-11",
+  "family": "mains",
+  "horizon": 7,
+  "quantity": 50,
+  "budget": 20000,
+  "purchase_cost": 5500,
+  "opportunities": 449,
+  "paths": 1024,
+  "baseline_revenue": 43254.41,
+  "scenario_revenue": 45255.2,
+  "incremental_revenue": 2000.78,
+  "p10": 560.0,
+  "p50": 2070.0,
+  "p90": 3380.0,
+  "incremental_contribution": 1457.15,
+  "probability_revenue_loss": 0.04,
+  "candidate_units": 31.11,
+  "unsold_candidate_value": 2077.43,
+  "incremental_cash_after_purchase": -3499.22,
+  "peer_count": 30,
+  "effective_peers": 27.58,
+  "mapping_confidence": 1.0,
+  "chart": [
+    {
+      "day": 1,
+      "baseline": 8731.15,
+      "scenario": 9793.71
+    },
+    {
+      "day": 2,
+      "baseline": 17334.26,
+      "scenario": 19464.08
+    },
+    {
+      "day": 3,
+      "baseline": 25936.54,
+      "scenario": 29101.09
+    },
+    {
+      "day": 4,
+      "baseline": 34530.78,
+      "scenario": 37003.48
+    },
+    {
+      "day": 5,
+      "baseline": 40935.78,
+      "scenario": 42786.84
+    },
+    {
+      "day": 6,
+      "baseline": 42316.91,
+      "scenario": 45252.38
+    },
+    {
+      "day": 7,
+      "baseline": 43254.41,
+      "scenario": 45255.2
+    }
+  ],
+  "sensitivity": [
+    {
+      "outside_factor": 0.5,
+      "incremental_revenue": -464.67
+    },
+    {
+      "outside_factor": 1.0,
+      "incremental_revenue": 2000.78
+    },
+    {
+      "outside_factor": 2.0,
+      "incremental_revenue": 3326.31
+    }
+  ],
+  "products": [
+    {
+      "name": "Veg thali",
+      "baseline_units": 58.15,
+      "scenario_units": 39.75,
+      "revenue_delta": -4048.73
+    },
+    {
+      "name": "Masala dosa",
+      "baseline_units": 75.1,
+      "scenario_units": 58.81,
+      "revenue_delta": -2279.65
+    },
+    {
+      "name": "Dal rice",
+      "baseline_units": 73.11,
+      "scenario_units": 84.28,
+      "revenue_delta": 1788.12
+    },
+    {
+      "name": "Veg burger",
+      "baseline_units": 13.11,
+      "scenario_units": 8.82,
+      "revenue_delta": -514.57
+    },
+    {
+      "name": "Cream pasta",
+      "baseline_units": 11.84,
+      "scenario_units": 0.0,
+      "revenue_delta": -2841.33
+    },
+    {
+      "name": "Idli plate",
+      "baseline_units": 38.37,
+      "scenario_units": 56.44,
+      "revenue_delta": 1807.23
+    },
+    {
+      "name": "Paneer grain bowl",
+      "baseline_units": 0.0,
+      "scenario_units": 31.11,
+      "revenue_delta": 8089.71
+    }
+  ],
+  "ingredient_remaining": [
+    {
+      "ingredient": "rice",
+      "baseline_kg": 3.119,
+      "scenario_kg": 0.134
+    },
+    {
+      "ingredient": "lentils",
+      "baseline_kg": 0.037,
+      "scenario_kg": 0.392
+    },
+    {
+      "ingredient": "vegetables",
+      "baseline_kg": 0.057,
+      "scenario_kg": 0.041
+    },
+    {
+      "ingredient": "batter",
+      "baseline_kg": 0.074,
+      "scenario_kg": 0.078
+    },
+    {
+      "ingredient": "bread",
+      "baseline_kg": 6.689,
+      "scenario_kg": 7.118
+    },
+    {
+      "ingredient": "potatoes",
+      "baseline_kg": 14.0,
+      "scenario_kg": 14.0
+    },
+    {
+      "ingredient": "lime",
+      "baseline_kg": 5.0,
+      "scenario_kg": 5.0
+    },
+    {
+      "ingredient": "dessert_mix",
+      "baseline_kg": 6.0,
+      "scenario_kg": 6.0
+    },
+    {
+      "ingredient": "coffee",
+      "baseline_kg": 2.0,
+      "scenario_kg": 2.0
+    },
+    {
+      "ingredient": "milk",
+      "baseline_kg": 12.0,
+      "scenario_kg": 12.0
+    },
+    {
+      "ingredient": "pasta",
+      "baseline_kg": 6.579,
+      "scenario_kg": 8.0
+    },
+    {
+      "ingredient": "cream",
+      "baseline_kg": 4.053,
+      "scenario_kg": 5.0
+    },
+    {
+      "ingredient": "paneer",
+      "baseline_kg": 8.0,
+      "scenario_kg": 4.889
+    }
+  ],
+  "peer_evidence": {
+    "verdict": "SUPPORTED",
+    "product": "restaurant-11",
+    "name": "Paneer grain bowl",
+    "family": "mains",
+    "peer_count": 30,
+    "eligible_count": 35,
+    "effective_peers": 27.58,
+    "mapping_confidence": 1.0,
+    "peer_rate_per_100_bills": 22.629,
+    "rate": 0.2268365802421551,
+    "rate_p10": 0.20003032017889238,
+    "rate_p90": 0.25449747332634104,
+    "alpha": 113.64512670131971,
+    "beta": 501.0,
+    "local_units": 0,
+    "local_exposure": 0,
+    "weighted_units": 1283.26,
+    "weighted_exposure": 5670.87,
+    "prior_strength": 500.0,
+    "window": [
+      "2026-07-03",
+      "2026-10-02"
+    ],
+    "similarity_features": [
+      "same business type",
+      "non-candidate category mix",
+      "replacement category weighting"
+    ],
+    "anonymized": true,
+    "receipt": {
+      "inputs": {
+        "merchant": "restaurant",
+        "product": "restaurant-11",
+        "excluded_from_similarity": [
+          "restaurant-11",
+          "restaurant-09"
+        ],
+        "window": [
+          "2026-07-03",
+          "2026-10-02"
+        ],
+        "completed_peer_week_start_at_most": "2026-09-26"
+      },
+      "formula_text": "w \u221d exp(\u22128d); ESS=1/\u03a3w\u00b2; \u03b1=0.5 + capped prior exposure \u00d7 weighted peer rate + local units; \u03b2=1 + capped prior exposure + local availability exposure",
+      "output": {
+        "verdict": "SUPPORTED",
+        "product": "restaurant-11",
+        "name": "Paneer grain bowl",
+        "family": "mains",
+        "peer_count": 30,
+        "eligible_count": 35,
+        "effective_peers": 27.58,
+        "mapping_confidence": 1.0,
+        "peer_rate_per_100_bills": 22.629,
+        "rate": 0.2268365802421551,
+        "rate_p10": 0.20003032017889238,
+        "rate_p90": 0.25449747332634104,
+        "alpha": 113.64512670131971,
+        "beta": 501.0,
+        "local_units": 0,
+        "local_exposure": 0,
+        "weighted_units": 1283.26,
+        "weighted_exposure": 5670.87,
+        "prior_strength": 500.0,
+        "window": [
+          "2026-07-03",
+          "2026-10-02"
+        ],
+        "similarity_features": [
+          "same business type",
+          "non-candidate category mix",
+          "replacement category weighting"
+        ],
+        "anonymized": true
+      },
+      "steps": [],
+      "assumptions": [
+        "Same-type, known-exposure donors only; missing offer exposure is not a zero sale. Cohorts below 10 abstain.",
+        "Exact nearest-neighbour reranking of this small demo cohort; production retrieval should use a category ANN index before reranking.",
+        "Canonical identity uses curated exact IDs and pack/variant-preserving aliases. Family membership only proposes substitutes.",
+        "Gamma\u2013Poisson predictive shrinkage is a conditional transfer assumption, not causal demand identification."
+      ],
+      "data_tier": "B",
+      "data_quality_flags": [
+        "SIMULATED_DATA",
+        "POS_BILLS_NOT_VISITOR_COUNTS"
+      ]
+    }
+  },
+  "simulated": true,
+  "receipt": {
+    "inputs": {
+      "merchant": "restaurant",
+      "remove": "restaurant-09",
+      "replace": "restaurant-11",
+      "supplied_unit_price": 260,
+      "supplied_unit_cost": 110,
+      "stock_caps_baseline": [
+        243,
+        263,
+        138,
+        41,
+        98,
+        130,
+        0
+      ],
+      "stock_caps_scenario": [
+        243,
+        263,
+        138,
+        41,
+        0,
+        130,
+        50
+      ],
+      "fixed_bill_opportunities": 449,
+      "quantity": 50,
+      "budget": 20000,
+      "horizon": 7,
+      "outside_factor": 1.0,
+      "seed": 92341,
+      "draw_seed": 8421,
+      "paths": 1024,
+      "ingredients_kg": {
+        "rice": 25.0,
+        "lentils": 12.0,
+        "vegetables": 20.0,
+        "batter": 22.0,
+        "bread": 8.0,
+        "potatoes": 14.0,
+        "lime": 5.0,
+        "dessert_mix": 6.0,
+        "coffee": 2.0,
+        "milk": 12.0,
+        "pasta": 8.0,
+        "cream": 5.0,
+        "paneer": 8.0
+      },
+      "recipes_kg": {
+        "Veg thali": {
+          "rice": 0.15,
+          "lentils": 0.08,
+          "vegetables": 0.18
+        },
+        "Masala dosa": {
+          "batter": 0.2,
+          "vegetables": 0.1
+        },
+        "Dal rice": {
+          "rice": 0.18,
+          "lentils": 0.1
+        },
+        "Veg burger": {
+          "bread": 0.1,
+          "vegetables": 0.15
+        },
+        "Cream pasta": {
+          "pasta": 0.12,
+          "cream": 0.08
+        },
+        "Idli plate": {
+          "batter": 0.18
+        },
+        "Paneer grain bowl": {
+          "rice": 0.12,
+          "paneer": 0.1,
+          "vegetables": 0.18
+        }
+      }
+    },
+    "formula_text": "P(i | available) = u_i / (outside_weight + \u03a3 available u_j); paired draws \u2192 stock/BOM decrement \u2192 revenue = \u03a3 units \u00d7 price; delta = scenario \u2212 baseline; contribution delta = \u03a3 delta units \u00d7 (price \u2212 cost)",
+    "output": {
+      "verdict": "SCENARIO",
+      "remove": "Cream pasta",
+      "replace": "Paneer grain bowl",
+      "remove_id": "restaurant-09",
+      "replace_id": "restaurant-11",
+      "family": "mains",
+      "horizon": 7,
+      "quantity": 50,
+      "budget": 20000,
+      "purchase_cost": 5500,
+      "opportunities": 449,
+      "paths": 1024,
+      "baseline_revenue": 43254.41,
+      "scenario_revenue": 45255.2,
+      "incremental_revenue": 2000.78,
+      "p10": 560.0,
+      "p50": 2070.0,
+      "p90": 3380.0,
+      "incremental_contribution": 1457.15,
+      "probability_revenue_loss": 0.04,
+      "candidate_units": 31.11,
+      "unsold_candidate_value": 2077.43,
+      "incremental_cash_after_purchase": -3499.22,
+      "peer_count": 30,
+      "effective_peers": 27.58,
+      "mapping_confidence": 1.0,
+      "chart": [
+        {
+          "day": 1,
+          "baseline": 8731.15,
+          "scenario": 9793.71
+        },
+        {
+          "day": 2,
+          "baseline": 17334.26,
+          "scenario": 19464.08
+        },
+        {
+          "day": 3,
+          "baseline": 25936.54,
+          "scenario": 29101.09
+        },
+        {
+          "day": 4,
+          "baseline": 34530.78,
+          "scenario": 37003.48
+        },
+        {
+          "day": 5,
+          "baseline": 40935.78,
+          "scenario": 42786.84
+        },
+        {
+          "day": 6,
+          "baseline": 42316.91,
+          "scenario": 45252.38
+        },
+        {
+          "day": 7,
+          "baseline": 43254.41,
+          "scenario": 45255.2
+        }
+      ],
+      "sensitivity": [
+        {
+          "outside_factor": 0.5,
+          "incremental_revenue": -464.67
+        },
+        {
+          "outside_factor": 1.0,
+          "incremental_revenue": 2000.78
+        },
+        {
+          "outside_factor": 2.0,
+          "incremental_revenue": 3326.31
+        }
+      ],
+      "products": [
+        {
+          "name": "Veg thali",
+          "baseline_units": 58.15,
+          "scenario_units": 39.75,
+          "revenue_delta": -4048.73
+        },
+        {
+          "name": "Masala dosa",
+          "baseline_units": 75.1,
+          "scenario_units": 58.81,
+          "revenue_delta": -2279.65
+        },
+        {
+          "name": "Dal rice",
+          "baseline_units": 73.11,
+          "scenario_units": 84.28,
+          "revenue_delta": 1788.12
+        },
+        {
+          "name": "Veg burger",
+          "baseline_units": 13.11,
+          "scenario_units": 8.82,
+          "revenue_delta": -514.57
+        },
+        {
+          "name": "Cream pasta",
+          "baseline_units": 11.84,
+          "scenario_units": 0.0,
+          "revenue_delta": -2841.33
+        },
+        {
+          "name": "Idli plate",
+          "baseline_units": 38.37,
+          "scenario_units": 56.44,
+          "revenue_delta": 1807.23
+        },
+        {
+          "name": "Paneer grain bowl",
+          "baseline_units": 0.0,
+          "scenario_units": 31.11,
+          "revenue_delta": 8089.71
+        }
+      ],
+      "ingredient_remaining": [
+        {
+          "ingredient": "rice",
+          "baseline_kg": 3.119,
+          "scenario_kg": 0.134
+        },
+        {
+          "ingredient": "lentils",
+          "baseline_kg": 0.037,
+          "scenario_kg": 0.392
+        },
+        {
+          "ingredient": "vegetables",
+          "baseline_kg": 0.057,
+          "scenario_kg": 0.041
+        },
+        {
+          "ingredient": "batter",
+          "baseline_kg": 0.074,
+          "scenario_kg": 0.078
+        },
+        {
+          "ingredient": "bread",
+          "baseline_kg": 6.689,
+          "scenario_kg": 7.118
+        },
+        {
+          "ingredient": "potatoes",
+          "baseline_kg": 14.0,
+          "scenario_kg": 14.0
+        },
+        {
+          "ingredient": "lime",
+          "baseline_kg": 5.0,
+          "scenario_kg": 5.0
+        },
+        {
+          "ingredient": "dessert_mix",
+          "baseline_kg": 6.0,
+          "scenario_kg": 6.0
+        },
+        {
+          "ingredient": "coffee",
+          "baseline_kg": 2.0,
+          "scenario_kg": 2.0
+        },
+        {
+          "ingredient": "milk",
+          "baseline_kg": 12.0,
+          "scenario_kg": 12.0
+        },
+        {
+          "ingredient": "pasta",
+          "baseline_kg": 6.579,
+          "scenario_kg": 8.0
+        },
+        {
+          "ingredient": "cream",
+          "baseline_kg": 4.053,
+          "scenario_kg": 5.0
+        },
+        {
+          "ingredient": "paneer",
+          "baseline_kg": 8.0,
+          "scenario_kg": 4.889
+        }
+      ],
+      "simulated": true
+    },
+    "steps": [],
+    "assumptions": [
+      "Conditional 7/30-day bill schedule is fixed across branches; it is not an estimate of all visitors. Only this substitute family is modeled; other categories cancel.",
+      "Peer-informed demand with Gamma\u2013Poisson uncertainty. Outside option, IIA and no replenishment during this trial are assumptions; sensitivity is not a confidence interval.",
+      "Stockouts remove products from the choice set. Restaurant choices also consume shared recipe ingredients; quantities/costs are supplied synthetic inputs, never inferred from peers.",
+      "Existing Y stock is set aside, with no resale, salvage or disposal claim. Purchase cash is paid once; unsold X remains inventory and has no assumed terminal sale.",
+      "P10\u2013P90 describe this model and seed, not calibrated causal uplift. Validate with a small randomized assortment trial. Expiry, staffing, shelf volume and promotion effects are outside this narrow trial."
+    ],
+    "data_tier": "B",
+    "data_quality_flags": [
+      "SIMULATED_DATA",
+      "POS_BILLS_NOT_VISITOR_COUNTS"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "name": "Munshi approval_action \u2014 synthetic demo",
+  "nodes": [
+    {
+      "id": "hook",
+      "name": "Telegram callback",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "munshi-approval",
+        "responseMode": "lastNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "approve",
+      "name": "Authenticate and consume callback",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        0
+      ],
+      "parameters": {
+        "url": "http://api:8000/channels/telegram/webhook",
+        "method": "POST",
+        "options": {
+          "timeout": 10000
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body) }}",
+        "sendHeaders": true,
+        "specifyHeaders": "keypair",
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Telegram-Bot-Api-Secret-Token",
+              "value": "={{ $json.headers['x-telegram-bot-api-secret-token'] }}"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram callback": {
+      "main": [
+        [
+          {
+            "node": "Authenticate and consume callback",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata"
+  },
+  "pinData": {},
+  "tags": []
+}

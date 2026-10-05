@@ -1,0 +1,354 @@
+{
+  "verdict": "SCENARIO",
+  "remove": "Digestive biscuits 200 g",
+  "replace": "Millet cookies 150 g",
+  "remove_id": "hypermarket-09",
+  "replace_id": "hypermarket-11",
+  "family": "snacks",
+  "horizon": 7,
+  "quantity": 50,
+  "budget": 20000,
+  "purchase_cost": 3400,
+  "opportunities": 632,
+  "paths": 1024,
+  "baseline_revenue": 12592.01,
+  "scenario_revenue": 16911.55,
+  "incremental_revenue": 4319.54,
+  "p10": 3650.0,
+  "p50": 4320.0,
+  "p90": 5007.0,
+  "incremental_contribution": 1679.9,
+  "probability_revenue_loss": 0.0,
+  "candidate_units": 50.0,
+  "unsold_candidate_value": 0.0,
+  "incremental_cash_after_purchase": 919.54,
+  "peer_count": 30,
+  "effective_peers": 29.51,
+  "mapping_confidence": 1.0,
+  "chart": [
+    {
+      "day": 1,
+      "baseline": 1839.7,
+      "scenario": 3264.93
+    },
+    {
+      "day": 2,
+      "baseline": 3660.62,
+      "scenario": 6463.88
+    },
+    {
+      "day": 3,
+      "baseline": 5483.29,
+      "scenario": 9496.67
+    },
+    {
+      "day": 4,
+      "baseline": 7324.37,
+      "scenario": 11627.28
+    },
+    {
+      "day": 5,
+      "baseline": 9147.85,
+      "scenario": 13417.7
+    },
+    {
+      "day": 6,
+      "baseline": 10955.31,
+      "scenario": 15182.75
+    },
+    {
+      "day": 7,
+      "baseline": 12592.01,
+      "scenario": 16911.55
+    }
+  ],
+  "sensitivity": [
+    {
+      "outside_factor": 0.5,
+      "incremental_revenue": 4605.55
+    },
+    {
+      "outside_factor": 1.0,
+      "incremental_revenue": 4319.54
+    },
+    {
+      "outside_factor": 2.0,
+      "incremental_revenue": 4623.21
+    }
+  ],
+  "products": [
+    {
+      "name": "Potato chips 50 g",
+      "baseline_units": 172.63,
+      "scenario_units": 170.31,
+      "revenue_delta": -46.46
+    },
+    {
+      "name": "Chocolate 100 g",
+      "baseline_units": 96.48,
+      "scenario_units": 88.95,
+      "revenue_delta": -677.9
+    },
+    {
+      "name": "Digestive biscuits 200 g",
+      "baseline_units": 5.7,
+      "scenario_units": 0.0,
+      "revenue_delta": -456.09
+    },
+    {
+      "name": "Millet cookies 150 g",
+      "baseline_units": 0.0,
+      "scenario_units": 50.0,
+      "revenue_delta": 5500.0
+    }
+  ],
+  "ingredient_remaining": [],
+  "peer_evidence": {
+    "verdict": "SUPPORTED",
+    "product": "hypermarket-11",
+    "name": "Millet cookies 150 g",
+    "family": "snacks",
+    "peer_count": 30,
+    "eligible_count": 35,
+    "effective_peers": 29.51,
+    "mapping_confidence": 1.0,
+    "peer_rate_per_100_bills": 21.302,
+    "rate": 0.21359557621067451,
+    "rate_p10": 0.18759825509360278,
+    "rate_p90": 0.24044752057427568,
+    "alpha": 107.01138368154793,
+    "beta": 501.0,
+    "local_units": 0,
+    "local_exposure": 0,
+    "weighted_units": 1639.46,
+    "weighted_exposure": 7696.16,
+    "prior_strength": 500.0,
+    "window": [
+      "2026-07-03",
+      "2026-10-02"
+    ],
+    "similarity_features": [
+      "same business type",
+      "non-candidate category mix",
+      "replacement category weighting"
+    ],
+    "anonymized": true,
+    "receipt": {
+      "inputs": {
+        "merchant": "hypermarket",
+        "product": "hypermarket-11",
+        "excluded_from_similarity": [
+          "hypermarket-11",
+          "hypermarket-09"
+        ],
+        "window": [
+          "2026-07-03",
+          "2026-10-02"
+        ],
+        "completed_peer_week_start_at_most": "2026-09-26"
+      },
+      "formula_text": "w \u221d exp(\u22128d); ESS=1/\u03a3w\u00b2; \u03b1=0.5 + capped prior exposure \u00d7 weighted peer rate + local units; \u03b2=1 + capped prior exposure + local availability exposure",
+      "output": {
+        "verdict": "SUPPORTED",
+        "product": "hypermarket-11",
+        "name": "Millet cookies 150 g",
+        "family": "snacks",
+        "peer_count": 30,
+        "eligible_count": 35,
+        "effective_peers": 29.51,
+        "mapping_confidence": 1.0,
+        "peer_rate_per_100_bills": 21.302,
+        "rate": 0.21359557621067451,
+        "rate_p10": 0.18759825509360278,
+        "rate_p90": 0.24044752057427568,
+        "alpha": 107.01138368154793,
+        "beta": 501.0,
+        "local_units": 0,
+        "local_exposure": 0,
+        "weighted_units": 1639.46,
+        "weighted_exposure": 7696.16,
+        "prior_strength": 500.0,
+        "window": [
+          "2026-07-03",
+          "2026-10-02"
+        ],
+        "similarity_features": [
+          "same business type",
+          "non-candidate category mix",
+          "replacement category weighting"
+        ],
+        "anonymized": true
+      },
+      "steps": [],
+      "assumptions": [
+        "Same-type, known-exposure donors only; missing offer exposure is not a zero sale. Cohorts below 10 abstain.",
+        "Exact nearest-neighbour reranking of this small demo cohort; production retrieval should use a category ANN index before reranking.",
+        "Canonical identity uses curated exact IDs and pack/variant-preserving aliases. Family membership only proposes substitutes.",
+        "Gamma\u2013Poisson predictive shrinkage is a conditional transfer assumption, not causal demand identification."
+      ],
+      "data_tier": "B",
+      "data_quality_flags": [
+        "SIMULATED_DATA",
+        "POS_BILLS_NOT_VISITOR_COUNTS"
+      ]
+    }
+  },
+  "simulated": true,
+  "receipt": {
+    "inputs": {
+      "merchant": "hypermarket",
+      "remove": "hypermarket-09",
+      "replace": "hypermarket-11",
+      "supplied_unit_price": 110,
+      "supplied_unit_cost": 68,
+      "stock_caps_baseline": [
+        173,
+        103,
+        144,
+        0
+      ],
+      "stock_caps_scenario": [
+        173,
+        103,
+        0,
+        50
+      ],
+      "fixed_bill_opportunities": 632,
+      "quantity": 50,
+      "budget": 20000,
+      "horizon": 7,
+      "outside_factor": 1.0,
+      "seed": 92341,
+      "draw_seed": 8421,
+      "paths": 1024,
+      "ingredients_kg": {},
+      "recipes_kg": {
+        "Potato chips 50 g": {},
+        "Chocolate 100 g": {},
+        "Digestive biscuits 200 g": {},
+        "Millet cookies 150 g": {}
+      }
+    },
+    "formula_text": "P(i | available) = u_i / (outside_weight + \u03a3 available u_j); paired draws \u2192 stock/BOM decrement \u2192 revenue = \u03a3 units \u00d7 price; delta = scenario \u2212 baseline; contribution delta = \u03a3 delta units \u00d7 (price \u2212 cost)",
+    "output": {
+      "verdict": "SCENARIO",
+      "remove": "Digestive biscuits 200 g",
+      "replace": "Millet cookies 150 g",
+      "remove_id": "hypermarket-09",
+      "replace_id": "hypermarket-11",
+      "family": "snacks",
+      "horizon": 7,
+      "quantity": 50,
+      "budget": 20000,
+      "purchase_cost": 3400,
+      "opportunities": 632,
+      "paths": 1024,
+      "baseline_revenue": 12592.01,
+      "scenario_revenue": 16911.55,
+      "incremental_revenue": 4319.54,
+      "p10": 3650.0,
+      "p50": 4320.0,
+      "p90": 5007.0,
+      "incremental_contribution": 1679.9,
+      "probability_revenue_loss": 0.0,
+      "candidate_units": 50.0,
+      "unsold_candidate_value": 0.0,
+      "incremental_cash_after_purchase": 919.54,
+      "peer_count": 30,
+      "effective_peers": 29.51,
+      "mapping_confidence": 1.0,
+      "chart": [
+        {
+          "day": 1,
+          "baseline": 1839.7,
+          "scenario": 3264.93
+        },
+        {
+          "day": 2,
+          "baseline": 3660.62,
+          "scenario": 6463.88
+        },
+        {
+          "day": 3,
+          "baseline": 5483.29,
+          "scenario": 9496.67
+        },
+        {
+          "day": 4,
+          "baseline": 7324.37,
+          "scenario": 11627.28
+        },
+        {
+          "day": 5,
+          "baseline": 9147.85,
+          "scenario": 13417.7
+        },
+        {
+          "day": 6,
+          "baseline": 10955.31,
+          "scenario": 15182.75
+        },
+        {
+          "day": 7,
+          "baseline": 12592.01,
+          "scenario": 16911.55
+        }
+      ],
+      "sensitivity": [
+        {
+          "outside_factor": 0.5,
+          "incremental_revenue": 4605.55
+        },
+        {
+          "outside_factor": 1.0,
+          "incremental_revenue": 4319.54
+        },
+        {
+          "outside_factor": 2.0,
+          "incremental_revenue": 4623.21
+        }
+      ],
+      "products": [
+        {
+          "name": "Potato chips 50 g",
+          "baseline_units": 172.63,
+          "scenario_units": 170.31,
+          "revenue_delta": -46.46
+        },
+        {
+          "name": "Chocolate 100 g",
+          "baseline_units": 96.48,
+          "scenario_units": 88.95,
+          "revenue_delta": -677.9
+        },
+        {
+          "name": "Digestive biscuits 200 g",
+          "baseline_units": 5.7,
+          "scenario_units": 0.0,
+          "revenue_delta": -456.09
+        },
+        {
+          "name": "Millet cookies 150 g",
+          "baseline_units": 0.0,
+          "scenario_units": 50.0,
+          "revenue_delta": 5500.0
+        }
+      ],
+      "ingredient_remaining": [],
+      "simulated": true
+    },
+    "steps": [],
+    "assumptions": [
+      "Conditional 7/30-day bill schedule is fixed across branches; it is not an estimate of all visitors. Only this substitute family is modeled; other categories cancel.",
+      "Peer-informed demand with Gamma\u2013Poisson uncertainty. Outside option, IIA and no replenishment during this trial are assumptions; sensitivity is not a confidence interval.",
+      "Stockouts remove products from the choice set. Restaurant choices also consume shared recipe ingredients; quantities/costs are supplied synthetic inputs, never inferred from peers.",
+      "Existing Y stock is set aside, with no resale, salvage or disposal claim. Purchase cash is paid once; unsold X remains inventory and has no assumed terminal sale.",
+      "P10\u2013P90 describe this model and seed, not calibrated causal uplift. Validate with a small randomized assortment trial. Expiry, staffing, shelf volume and promotion effects are outside this narrow trial."
+    ],
+    "data_tier": "B",
+    "data_quality_flags": [
+      "SIMULATED_DATA",
+      "POS_BILLS_NOT_VISITOR_COUNTS"
+    ]
+  }
+}

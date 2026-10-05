@@ -1,0 +1,55 @@
+{"question": "10% discount doon?", "expected_tool": "promo"}
+{"question": "Offer se munafa hoga?", "expected_tool": "promo"}
+{"question": "Promo ka profit batao", "expected_tool": "promo"}
+{"question": "छूट दूँ क्या?", "expected_tool": "promo"}
+{"question": "सवलत देऊ का?", "expected_tool": "promo"}
+{"question": "Discount se kitna kamaunga?", "expected_tool": "promo"}
+{"question": "Namkeen offer check karo", "expected_tool": "promo"}
+{"question": "10 percent discount", "expected_tool": "promo"}
+{"question": "Festival offer sahi hai?", "expected_tool": "promo"}
+{"question": "Cash kitna safe hai?", "expected_tool": "cash"}
+{"question": "Paisa bachana hai", "expected_tool": "cash"}
+{"question": "Paise ki kami kab hogi?", "expected_tool": "cash"}
+{"question": "Cash gap dikhana", "expected_tool": "cash"}
+{"question": "Runway batao", "expected_tool": "cash"}
+{"question": "नकद कितना है?", "expected_tool": "cash"}
+{"question": "रोकड किती आहे?", "expected_tool": "cash"}
+{"question": "Cash dues ke baad?", "expected_tool": "cash"}
+{"question": "Restock budget allocate karo", "expected_tool": "allocate"}
+{"question": "Stock refill karun?", "expected_tool": "allocate"}
+{"question": "Budget 3000 hai", "expected_tool": "allocate"}
+{"question": "माल खरीदना है", "expected_tool": "allocate"}
+{"question": "साठा वाढवू का?", "expected_tool": "allocate"}
+{"question": "Next rupee kidhar?", "expected_tool": "allocate"}
+{"question": "Namkeen restock karo", "expected_tool": "allocate"}
+{"question": "खरीद का सुझाव", "expected_tool": "allocate"}
+{"question": "Aaj kaisa raha?", "expected_tool": "overview"}
+{"question": "Overview do", "expected_tool": "overview"}
+{"question": "Weekly summary", "expected_tool": "overview"}
+{"question": "Sales dikhao", "expected_tool": "overview"}
+{"question": "आज का हिसाब", "expected_tool": "overview"}
+{"question": "विक्री किती झाली?", "expected_tool": "overview"}
+{"question": "बिक्री बताओ", "expected_tool": "overview"}
+{"question": "Aaj ka business", "expected_tool": "overview"}
+{"question": "Similar shops kya kar rahe?", "expected_tool": "peers"}
+{"question": "Lookalike merchants", "expected_tool": "peers"}
+{"question": "Peer demand prior", "expected_tool": "peers"}
+{"question": "Similar dukaan ka data", "expected_tool": "peers"}
+{"question": "इतर दुकाने काय करतात?", "expected_tool": "peers"}
+{"question": "दुकानें कैसी हैं?", "expected_tool": "peers"}
+{"question": "Peer group size", "expected_tool": "peers"}
+{"question": "Similar stores forecast", "expected_tool": "peers"}
+{"question": "Loan chahiye", "expected_tool": "loan"}
+{"question": "Credit lena chahiye?", "expected_tool": "loan"}
+{"question": "Karz sahi hai?", "expected_tool": "loan"}
+{"question": "कर्ज घ्यावे का?", "expected_tool": "loan"}
+{"question": "उधार लेना है", "expected_tool": "loan"}
+{"question": "Loan gap fund karega?", "expected_tool": "loan"}
+{"question": "Credit terms batao", "expected_tool": "loan"}
+{"question": "Small loan nudge", "expected_tool": "loan"}
+{"question": "Weather kal kya hai?", "expected_tool": "out_of_scope"}
+{"question": "Cricket score", "expected_tool": "out_of_scope"}
+{"question": "Doctor ka number", "expected_tool": "out_of_scope"}
+{"question": "Movie batao", "expected_tool": "out_of_scope"}
+{"question": "Who is prime minister?", "expected_tool": "out_of_scope"}
+{"question": "Hello", "expected_tool": "out_of_scope"}

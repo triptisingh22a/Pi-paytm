@@ -1,0 +1,1523 @@
+{
+  "simulated": true,
+  "start": "2025-10-03",
+  "end": "2026-10-02",
+  "days": 365,
+  "seed": 731,
+  "timezone": "Asia/Kolkata (+05:30)",
+  "files": [
+    "pos_lines.csv.gz",
+    "stock_arrivals.csv.gz",
+    "daily_availability.csv.gz",
+    "lookalike_weekly_facts.csv.gz"
+  ],
+  "total_bills": 123373,
+  "total_line_items": 218159,
+  "donor_count": 280,
+  "peer_week_facts": 152640,
+  "schema_note": "Seven focal shops have complete item-level bills and stock arrivals. 280 donors have generated weekly sufficient statistics from simulated bill opportunities, not stored raw donor invoices.",
+  "availability_note": "Daily exposure counts synthetic completed-bill opportunities at which each item was available. Real POS deployments need an availability/stockout integration, not just invoice zeros.",
+  "customer_note": "65% chance of a synthetic pseudonymous loyalty ID on a bill; no demographic or all-visitor inference.",
+  "merchants": [
+    {
+      "merchant": "hypermarket",
+      "name": "Asha Hypermarket",
+      "bills": 35262,
+      "line_items": 62904,
+      "stock_events": 615,
+      "catalogue_items": 12,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "hypermarket-01",
+          "name": "Rice 5 kg",
+          "price": 520,
+          "cost": 430,
+          "family": "essentials",
+          "propensity": 0.16,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Rice 5 kg",
+            "rice-5-kg",
+            "HYPERMARKET-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-02",
+          "name": "Sunflower oil 1 L",
+          "price": 150,
+          "cost": 132,
+          "family": "essentials",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Sunflower oil 1 L",
+            "sunflower-oil-1-l",
+            "HYPERMARKET-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-03",
+          "name": "Milk 1 L",
+          "price": 64,
+          "cost": 55,
+          "family": "chilled",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Milk 1 L",
+            "milk-1-l",
+            "HYPERMARKET-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-04",
+          "name": "Potato chips 50 g",
+          "price": 20,
+          "cost": 14,
+          "family": "snacks",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Potato chips 50 g",
+            "potato-chips-50-g",
+            "HYPERMARKET-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-05",
+          "name": "Instant noodles 280 g",
+          "price": 72,
+          "cost": 54,
+          "family": "pantry",
+          "propensity": 0.21,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Instant noodles 280 g",
+            "instant-noodles-280-g",
+            "HYPERMARKET-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-06",
+          "name": "Chocolate 100 g",
+          "price": 90,
+          "cost": 55,
+          "family": "snacks",
+          "propensity": 0.12,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Chocolate 100 g",
+            "chocolate-100-g",
+            "HYPERMARKET-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-07",
+          "name": "Oats 1 kg",
+          "price": 180,
+          "cost": 120,
+          "family": "breakfast",
+          "propensity": 0.1,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Oats 1 kg",
+            "oats-1-kg",
+            "HYPERMARKET-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-08",
+          "name": "Fruit juice 1 L",
+          "price": 110,
+          "cost": 76,
+          "family": "drinks",
+          "propensity": 0.14,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Fruit juice 1 L",
+            "fruit-juice-1-l",
+            "HYPERMARKET-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-09",
+          "name": "Digestive biscuits 200 g",
+          "price": 80,
+          "cost": 55,
+          "family": "snacks",
+          "propensity": 0.07,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Digestive biscuits 200 g",
+            "digestive-biscuits-200-g",
+            "HYPERMARKET-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-10",
+          "name": "Breakfast cereal 300 g",
+          "price": 170,
+          "cost": 126,
+          "family": "breakfast",
+          "propensity": 0.12,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Breakfast cereal 300 g",
+            "breakfast-cereal-300-g",
+            "HYPERMARKET-10"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-11",
+          "name": "Millet cookies 150 g",
+          "price": 110,
+          "cost": 68,
+          "family": "snacks",
+          "propensity": 0.19,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Millet cookies 150 g",
+            "millet-cookies-150-g",
+            "HYPERMARKET-11"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "hypermarket-12",
+          "name": "Roasted makhana 80 g",
+          "price": 130,
+          "cost": 83,
+          "family": "snacks",
+          "propensity": 0.15,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Roasted makhana 80 g",
+            "roasted-makhana-80-g",
+            "HYPERMARKET-12"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    },
+    {
+      "merchant": "restaurant",
+      "name": "Annapurna Kitchen",
+      "bills": 24850,
+      "line_items": 50889,
+      "stock_events": 592,
+      "catalogue_items": 12,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "restaurant-01",
+          "name": "Veg thali",
+          "price": 220,
+          "cost": 95,
+          "family": "mains",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Veg thali",
+            "veg-thali",
+            "RESTAURANT-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "rice": 0.15,
+            "lentils": 0.08,
+            "vegetables": 0.18
+          }
+        },
+        {
+          "id": "restaurant-02",
+          "name": "Masala dosa",
+          "price": 140,
+          "cost": 55,
+          "family": "mains",
+          "propensity": 0.18,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Masala dosa",
+            "masala-dosa",
+            "RESTAURANT-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "batter": 0.2,
+            "vegetables": 0.1
+          }
+        },
+        {
+          "id": "restaurant-03",
+          "name": "Dal rice",
+          "price": 160,
+          "cost": 60,
+          "family": "mains",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Dal rice",
+            "dal-rice",
+            "RESTAURANT-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "rice": 0.18,
+            "lentils": 0.1
+          }
+        },
+        {
+          "id": "restaurant-04",
+          "name": "Veg burger",
+          "price": 120,
+          "cost": 55,
+          "family": "mains",
+          "propensity": 0.14,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Veg burger",
+            "veg-burger",
+            "RESTAURANT-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "bread": 0.1,
+            "vegetables": 0.15
+          }
+        },
+        {
+          "id": "restaurant-05",
+          "name": "French fries",
+          "price": 90,
+          "cost": 35,
+          "family": "sides",
+          "propensity": 0.21,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "French fries",
+            "french-fries",
+            "RESTAURANT-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "potatoes": 0.18
+          }
+        },
+        {
+          "id": "restaurant-06",
+          "name": "Lime soda",
+          "price": 60,
+          "cost": 15,
+          "family": "drinks",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Lime soda",
+            "lime-soda",
+            "RESTAURANT-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "lime": 0.05
+          }
+        },
+        {
+          "id": "restaurant-07",
+          "name": "Gulab jamun",
+          "price": 70,
+          "cost": 22,
+          "family": "desserts",
+          "propensity": 0.16,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Gulab jamun",
+            "gulab-jamun",
+            "RESTAURANT-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "dessert_mix": 0.07
+          }
+        },
+        {
+          "id": "restaurant-08",
+          "name": "Filter coffee",
+          "price": 80,
+          "cost": 24,
+          "family": "drinks",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Filter coffee",
+            "filter-coffee",
+            "RESTAURANT-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "coffee": 0.015,
+            "milk": 0.12
+          }
+        },
+        {
+          "id": "restaurant-09",
+          "name": "Cream pasta",
+          "price": 240,
+          "cost": 110,
+          "family": "mains",
+          "propensity": 0.08,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Cream pasta",
+            "cream-pasta",
+            "RESTAURANT-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "pasta": 0.12,
+            "cream": 0.08
+          }
+        },
+        {
+          "id": "restaurant-10",
+          "name": "Idli plate",
+          "price": 100,
+          "cost": 35,
+          "family": "mains",
+          "propensity": 0.18,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "portion",
+          "aliases": [
+            "Idli plate",
+            "idli-plate",
+            "RESTAURANT-10"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "batter": 0.18
+          }
+        },
+        {
+          "id": "restaurant-11",
+          "name": "Paneer grain bowl",
+          "price": 260,
+          "cost": 110,
+          "family": "mains",
+          "propensity": 0.2,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "portion",
+          "aliases": [
+            "Paneer grain bowl",
+            "paneer-grain-bowl",
+            "RESTAURANT-11"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "rice": 0.12,
+            "paneer": 0.1,
+            "vegetables": 0.18
+          }
+        },
+        {
+          "id": "restaurant-12",
+          "name": "Veg rice bowl",
+          "price": 210,
+          "cost": 84,
+          "family": "mains",
+          "propensity": 0.23,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "portion",
+          "aliases": [
+            "Veg rice bowl",
+            "veg-rice-bowl",
+            "RESTAURANT-12"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {
+            "rice": 0.16,
+            "vegetables": 0.2
+          }
+        }
+      ],
+      "ingredients_kg": {
+        "rice": 25.0,
+        "lentils": 12.0,
+        "vegetables": 20.0,
+        "batter": 22.0,
+        "bread": 8.0,
+        "potatoes": 14.0,
+        "lime": 5.0,
+        "dessert_mix": 6.0,
+        "coffee": 2.0,
+        "milk": 12.0,
+        "pasta": 8.0,
+        "cream": 5.0,
+        "paneer": 8.0
+      }
+    },
+    {
+      "merchant": "apparel",
+      "name": "Thread & Co.",
+      "bills": 9471,
+      "line_items": 18804,
+      "stock_events": 614,
+      "catalogue_items": 12,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "apparel-01",
+          "name": "Cotton tee M",
+          "price": 399,
+          "cost": 190,
+          "family": "casual",
+          "propensity": 0.28,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Cotton tee M",
+            "cotton-tee-m",
+            "APPAREL-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-02",
+          "name": "Denim jeans 32",
+          "price": 1299,
+          "cost": 650,
+          "family": "bottoms",
+          "propensity": 0.18,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Denim jeans 32",
+            "denim-jeans-32",
+            "APPAREL-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-03",
+          "name": "Linen shirt M",
+          "price": 899,
+          "cost": 420,
+          "family": "casual",
+          "propensity": 0.17,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Linen shirt M",
+            "linen-shirt-m",
+            "APPAREL-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-04",
+          "name": "Printed tee M",
+          "price": 499,
+          "cost": 230,
+          "family": "casual",
+          "propensity": 0.17,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Printed tee M",
+            "printed-tee-m",
+            "APPAREL-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-05",
+          "name": "Chinos 32",
+          "price": 1099,
+          "cost": 540,
+          "family": "bottoms",
+          "propensity": 0.14,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Chinos 32",
+            "chinos-32",
+            "APPAREL-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-06",
+          "name": "Kurta M",
+          "price": 999,
+          "cost": 460,
+          "family": "ethnic",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Kurta M",
+            "kurta-m",
+            "APPAREL-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-07",
+          "name": "Leggings M",
+          "price": 349,
+          "cost": 150,
+          "family": "bottoms",
+          "propensity": 0.22,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Leggings M",
+            "leggings-m",
+            "APPAREL-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-08",
+          "name": "Scarf",
+          "price": 299,
+          "cost": 100,
+          "family": "accessories",
+          "propensity": 0.16,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Scarf",
+            "scarf",
+            "APPAREL-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-09",
+          "name": "Neon slogan tee M",
+          "price": 599,
+          "cost": 290,
+          "family": "casual",
+          "propensity": 0.06,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Neon slogan tee M",
+            "neon-slogan-tee-m",
+            "APPAREL-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-10",
+          "name": "Socks pair",
+          "price": 149,
+          "cost": 55,
+          "family": "accessories",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Socks pair",
+            "socks-pair",
+            "APPAREL-10"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-11",
+          "name": "Oversized tee M",
+          "price": 699,
+          "cost": 310,
+          "family": "casual",
+          "propensity": 0.23,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Oversized tee M",
+            "oversized-tee-m",
+            "APPAREL-11"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "apparel-12",
+          "name": "Polo tee M",
+          "price": 799,
+          "cost": 340,
+          "family": "casual",
+          "propensity": 0.19,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Polo tee M",
+            "polo-tee-m",
+            "APPAREL-12"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    },
+    {
+      "merchant": "kirana",
+      "name": "Patel Kirana",
+      "bills": 18775,
+      "line_items": 30552,
+      "stock_events": 442,
+      "catalogue_items": 9,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "kirana-01",
+          "name": "Rice 1 kg",
+          "price": 65,
+          "cost": 52,
+          "family": "staples",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Rice 1 kg",
+            "rice-1-kg",
+            "KIRANA-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-02",
+          "name": "Atta 5 kg",
+          "price": 240,
+          "cost": 195,
+          "family": "staples",
+          "propensity": 0.21,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Atta 5 kg",
+            "atta-5-kg",
+            "KIRANA-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-03",
+          "name": "Toor dal 1 kg",
+          "price": 150,
+          "cost": 123,
+          "family": "staples",
+          "propensity": 0.22,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Toor dal 1 kg",
+            "toor-dal-1-kg",
+            "KIRANA-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-04",
+          "name": "Salt 1 kg",
+          "price": 25,
+          "cost": 18,
+          "family": "staples",
+          "propensity": 0.18,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Salt 1 kg",
+            "salt-1-kg",
+            "KIRANA-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-05",
+          "name": "Tea 250 g",
+          "price": 130,
+          "cost": 100,
+          "family": "pantry",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Tea 250 g",
+            "tea-250-g",
+            "KIRANA-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-06",
+          "name": "Biscuits 100 g",
+          "price": 20,
+          "cost": 14,
+          "family": "snacks",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Biscuits 100 g",
+            "biscuits-100-g",
+            "KIRANA-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-07",
+          "name": "Old candy pack",
+          "price": 40,
+          "cost": 25,
+          "family": "snacks",
+          "propensity": 0.03,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Old candy pack",
+            "old-candy-pack",
+            "KIRANA-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-08",
+          "name": "Ragi cookies 150 g",
+          "price": 85,
+          "cost": 52,
+          "family": "snacks",
+          "propensity": 0.15,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Ragi cookies 150 g",
+            "ragi-cookies-150-g",
+            "KIRANA-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "kirana-09",
+          "name": "Peanuts 100 g",
+          "price": 35,
+          "cost": 22,
+          "family": "snacks",
+          "propensity": 0.2,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Peanuts 100 g",
+            "peanuts-100-g",
+            "KIRANA-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    },
+    {
+      "merchant": "pharmacy",
+      "name": "Carewell Pharmacy",
+      "bills": 11703,
+      "line_items": 16809,
+      "stock_events": 518,
+      "catalogue_items": 9,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "pharmacy-01",
+          "name": "Paracetamol strip",
+          "price": 30,
+          "cost": 20,
+          "family": "otc",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Paracetamol strip",
+            "paracetamol-strip",
+            "PHARMACY-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-02",
+          "name": "ORS sachet",
+          "price": 22,
+          "cost": 14,
+          "family": "otc",
+          "propensity": 0.22,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "ORS sachet",
+            "ors-sachet",
+            "PHARMACY-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-03",
+          "name": "Bandage pack",
+          "price": 65,
+          "cost": 37,
+          "family": "first-aid",
+          "propensity": 0.14,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Bandage pack",
+            "bandage-pack",
+            "PHARMACY-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-04",
+          "name": "Hand sanitiser 100 ml",
+          "price": 60,
+          "cost": 32,
+          "family": "hygiene",
+          "propensity": 0.1,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Hand sanitiser 100 ml",
+            "hand-sanitiser-100-ml",
+            "PHARMACY-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-05",
+          "name": "Sunscreen 50 g",
+          "price": 349,
+          "cost": 220,
+          "family": "care",
+          "propensity": 0.12,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Sunscreen 50 g",
+            "sunscreen-50-g",
+            "PHARMACY-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-06",
+          "name": "Soap bar",
+          "price": 45,
+          "cost": 29,
+          "family": "hygiene",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Soap bar",
+            "soap-bar",
+            "PHARMACY-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-07",
+          "name": "Legacy vitamin pack",
+          "price": 180,
+          "cost": 110,
+          "family": "care",
+          "propensity": 0.05,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Legacy vitamin pack",
+            "legacy-vitamin-pack",
+            "PHARMACY-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-08",
+          "name": "Moisturiser 100 ml",
+          "price": 220,
+          "cost": 130,
+          "family": "care",
+          "propensity": 0.15,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Moisturiser 100 ml",
+            "moisturiser-100-ml",
+            "PHARMACY-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "pharmacy-09",
+          "name": "Lip balm 10 g",
+          "price": 99,
+          "cost": 48,
+          "family": "care",
+          "propensity": 0.18,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Lip balm 10 g",
+            "lip-balm-10-g",
+            "PHARMACY-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    },
+    {
+      "merchant": "bakery",
+      "name": "Rise Bakery",
+      "bills": 16339,
+      "line_items": 27341,
+      "stock_events": 454,
+      "catalogue_items": 9,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "bakery-01",
+          "name": "Sourdough loaf",
+          "price": 160,
+          "cost": 65,
+          "family": "bread",
+          "propensity": 0.24,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Sourdough loaf",
+            "sourdough-loaf",
+            "BAKERY-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-02",
+          "name": "Milk bread loaf",
+          "price": 55,
+          "cost": 25,
+          "family": "bread",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Milk bread loaf",
+            "milk-bread-loaf",
+            "BAKERY-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-03",
+          "name": "Croissant",
+          "price": 95,
+          "cost": 35,
+          "family": "pastry",
+          "propensity": 0.24,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Croissant",
+            "croissant",
+            "BAKERY-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-04",
+          "name": "Chocolate muffin",
+          "price": 75,
+          "cost": 27,
+          "family": "pastry",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Chocolate muffin",
+            "chocolate-muffin",
+            "BAKERY-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-05",
+          "name": "Veg puff",
+          "price": 35,
+          "cost": 13,
+          "family": "savoury",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Veg puff",
+            "veg-puff",
+            "BAKERY-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-06",
+          "name": "Tea cake",
+          "price": 140,
+          "cost": 55,
+          "family": "cake",
+          "propensity": 0.14,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Tea cake",
+            "tea-cake",
+            "BAKERY-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-07",
+          "name": "Fruit muffin",
+          "price": 85,
+          "cost": 32,
+          "family": "pastry",
+          "propensity": 0.06,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Fruit muffin",
+            "fruit-muffin",
+            "BAKERY-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-08",
+          "name": "Banana muffin",
+          "price": 80,
+          "cost": 29,
+          "family": "pastry",
+          "propensity": 0.2,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Banana muffin",
+            "banana-muffin",
+            "BAKERY-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "bakery-09",
+          "name": "Cinnamon roll",
+          "price": 110,
+          "cost": 40,
+          "family": "pastry",
+          "propensity": 0.19,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Cinnamon roll",
+            "cinnamon-roll",
+            "BAKERY-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    },
+    {
+      "merchant": "electronics",
+      "name": "Circuit Corner",
+      "bills": 6973,
+      "line_items": 10860,
+      "stock_events": 471,
+      "catalogue_items": 9,
+      "donor_shops": 40,
+      "products": [
+        {
+          "id": "electronics-01",
+          "name": "USB C cable 1 m",
+          "price": 299,
+          "cost": 130,
+          "family": "accessories",
+          "propensity": 0.3,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "USB C cable 1 m",
+            "usb-c-cable-1-m",
+            "ELECTRONICS-01"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-02",
+          "name": "Charger 20 W",
+          "price": 799,
+          "cost": 390,
+          "family": "accessories",
+          "propensity": 0.2,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Charger 20 W",
+            "charger-20-w",
+            "ELECTRONICS-02"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-03",
+          "name": "Wireless earbuds",
+          "price": 1499,
+          "cost": 820,
+          "family": "audio",
+          "propensity": 0.19,
+          "trend": "rising",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Wireless earbuds",
+            "wireless-earbuds",
+            "ELECTRONICS-03"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-04",
+          "name": "Wired earphones",
+          "price": 299,
+          "cost": 130,
+          "family": "audio",
+          "propensity": 0.17,
+          "trend": "falling",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Wired earphones",
+            "wired-earphones",
+            "ELECTRONICS-04"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-05",
+          "name": "Power bank 10k",
+          "price": 1299,
+          "cost": 700,
+          "family": "accessories",
+          "propensity": 0.18,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Power bank 10k",
+            "power-bank-10k",
+            "ELECTRONICS-05"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-06",
+          "name": "Phone stand",
+          "price": 199,
+          "cost": 65,
+          "family": "accessories",
+          "propensity": 0.25,
+          "trend": "steady",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Phone stand",
+            "phone-stand",
+            "ELECTRONICS-06"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-07",
+          "name": "Micro USB cable 1 m",
+          "price": 249,
+          "cost": 100,
+          "family": "accessories",
+          "propensity": 0.05,
+          "trend": "dead",
+          "candidate": false,
+          "unit": "pack",
+          "aliases": [
+            "Micro USB cable 1 m",
+            "micro-usb-cable-1-m",
+            "ELECTRONICS-07"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-08",
+          "name": "USB C cable 2 m",
+          "price": 449,
+          "cost": 190,
+          "family": "accessories",
+          "propensity": 0.25,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "USB C cable 2 m",
+            "usb-c-cable-2-m",
+            "ELECTRONICS-08"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        },
+        {
+          "id": "electronics-09",
+          "name": "Fast charger 30 W",
+          "price": 999,
+          "cost": 480,
+          "family": "accessories",
+          "propensity": 0.16,
+          "trend": "candidate",
+          "candidate": true,
+          "unit": "pack",
+          "aliases": [
+            "Fast charger 30 W",
+            "fast-charger-30-w",
+            "ELECTRONICS-09"
+          ],
+          "mapping_confidence": 1.0,
+          "mapping_source": "curated synthetic catalogue",
+          "recipe": {}
+        }
+      ],
+      "ingredients_kg": {}
+    }
+  ]
+}

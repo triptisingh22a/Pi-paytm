@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "uplift": 0.8,
+  "pull_forward": 0.1,
+  "promo_discount": 0.1,
+  "events": {
+    "2025-10-20": "Diwali",
+    "2026-03-04": "Holi",
+    "2026-03-20": "Eid",
+    "2026-09-14": "Ganesh Chaturthi"
+  }
+}

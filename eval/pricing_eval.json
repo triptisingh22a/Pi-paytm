@@ -1,0 +1,171 @@
+{
+ "seed": 2026,
+ "horizon_days": 7,
+ "holdout_days": 28,
+ "items": {
+  "pilot-01": {
+   "name": "Branded biscuits 100 g",
+   "design": "randomized",
+   "evidence_state": "synthetic_experiment",
+   "true_eta": 1.1,
+   "eta_hat": 1.053,
+   "eta_se": 0.792,
+   "eta_error": -0.047,
+   "within_2se": true,
+   "holdout": {
+    "days": 26,
+    "mae_model": 26.35,
+    "mae_last28_mean": 26.95,
+    "interval80_coverage": 0.692
+   },
+   "delta_interval_coverage": {
+    "candidates": 6,
+    "covered": 6
+   },
+   "decisions": {
+    "best_true_gain_rupees": 1787,
+    "top_model_price": 46,
+    "true_gain_at_top_rupees": 1787,
+    "pi_choice": 42,
+    "labels_confident": 2
+   }
+  },
+  "pilot-02": {
+   "name": "Cooking oil 1 L",
+   "design": "randomized",
+   "evidence_state": "synthetic_experiment",
+   "true_eta": 4.0,
+   "eta_hat": 5.105,
+   "eta_se": 0.674,
+   "eta_error": 1.105,
+   "within_2se": true,
+   "holdout": {
+    "days": 26,
+    "mae_model": 10.44,
+    "mae_last28_mean": 15.01,
+    "interval80_coverage": 0.923
+   },
+   "delta_interval_coverage": {
+    "candidates": 8,
+    "covered": 0
+   },
+   "decisions": {
+    "best_true_gain_rupees": 177,
+    "top_model_price": 129,
+    "true_gain_at_top_rupees": -180,
+    "pi_choice": 135,
+    "labels_confident": 5
+   }
+  },
+  "pilot-03": {
+   "name": "Toor dal 1 kg",
+   "design": "randomized",
+   "evidence_state": "synthetic_experiment",
+   "true_eta": 3.2,
+   "eta_hat": 3.225,
+   "eta_se": 1.171,
+   "eta_error": 0.025,
+   "within_2se": true,
+   "holdout": {
+    "days": 26,
+    "mae_model": 14.94,
+    "mae_last28_mean": 12.32,
+    "interval80_coverage": 0.654
+   },
+   "delta_interval_coverage": {
+    "candidates": 6,
+    "covered": 6
+   },
+   "decisions": {
+    "best_true_gain_rupees": 198,
+    "top_model_price": 174,
+    "true_gain_at_top_rupees": 198,
+    "pi_choice": "keep price",
+    "labels_confident": 0
+   }
+  },
+  "pilot-04": {
+   "name": "Premium tea 250 g",
+   "design": "confounded",
+   "evidence_state": "observational",
+   "true_eta": 2.5,
+   "eta_hat": -0.179,
+   "eta_se": 3.59,
+   "eta_error": -2.679,
+   "within_2se": true,
+   "holdout": {
+    "days": 28,
+    "mae_model": 7.4,
+    "mae_last28_mean": 7.83,
+    "interval80_coverage": 0.75
+   },
+   "delta_interval_coverage": {
+    "candidates": 6,
+    "covered": 6
+   },
+   "decisions": {
+    "best_true_gain_rupees": 391,
+    "top_model_price": 252,
+    "true_gain_at_top_rupees": 391,
+    "pi_choice": "keep price",
+    "labels_confident": 0
+   },
+   "stress": {
+    "true_eta": 2.5,
+    "estimated_eta": -0.179,
+    "any_confident_label": false,
+    "overall_label": "trial_recommended"
+   }
+  },
+  "pilot-05": {
+   "name": "Soap bar",
+   "design": "sparse",
+   "evidence_state": "insufficient",
+   "true_eta": 1.8,
+   "note": "no fit: evidence insufficient (correctly withheld)"
+  },
+  "pilot-06": {
+   "name": "Instant coffee 50 g",
+   "design": "randomized",
+   "evidence_state": "synthetic_experiment",
+   "true_eta": 0.8,
+   "eta_hat": 0.399,
+   "eta_se": 0.506,
+   "eta_error": -0.401,
+   "within_2se": true,
+   "holdout": {
+    "days": 27,
+    "mae_model": 5.79,
+    "mae_last28_mean": 7.21,
+    "interval80_coverage": 0.741
+   },
+   "delta_interval_coverage": {
+    "candidates": 8,
+    "covered": 8
+   },
+   "decisions": {
+    "best_true_gain_rupees": 1939,
+    "top_model_price": 216,
+    "true_gain_at_top_rupees": 1939,
+    "pi_choice": 208,
+    "labels_confident": 5
+   }
+  }
+ },
+ "summary": {
+  "randomized_items": 4,
+  "mean_abs_eta_error_randomized": 0.394,
+  "holdout_mae_model": 12.98,
+  "holdout_mae_last28_mean": 13.86,
+  "holdout_interval80_coverage": 0.752,
+  "delta_interval80_coverage": 0.714,
+  "delta_interval_cases": 28,
+  "mean_regret_rupees": {
+   "keep": 898.3,
+   "pi": 467.1,
+   "model_top": 71.4,
+   "cut_5pct": 1356.6
+  },
+  "note": "Synthetic pilot only. These results do not establish accuracy on real merchants or causal effects of observational history."
+ }
+}

@@ -1,0 +1,11 @@
+{
+  "simulated": true,
+  "cutoff": "2026-08-28",
+  "evaluation": "Target merchant entirely excluded as donor; candidate outcomes excluded from target/peer similarity; completed future weeks only used for scoring.",
+  "cases": 490,
+  "weighted_peer_rmse_units_per_100_bills": 2.6477651455170443,
+  "type_item_mean_rmse_units_per_100_bills": 3.0748595743972182,
+  "no_history_zero_baseline_rmse": 21.715427624913136,
+  "model_predictive_p10_p90_coverage": 0.810204081632653,
+  "limitation": "Synthetic transfer diagnostic only. Generator exchangeability, seasonality and assortment selection differ from real shops. No causal replacement uplift or real-world calibration is established."
+}

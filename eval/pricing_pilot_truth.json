@@ -1,0 +1,122 @@
+{
+ "pilot-01": {
+  "name": "Branded biscuits 100 g",
+  "eta": 1.1,
+  "base_per_day": 55,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "randomized",
+  "current_price_paise": 4000,
+  "cost_paise": 3200,
+  "order_up_to": 520
+ },
+ "pilot-02": {
+  "name": "Cooking oil 1 L",
+  "eta": 4.0,
+  "base_per_day": 22,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "randomized",
+  "current_price_paise": 15000,
+  "cost_paise": 10500,
+  "order_up_to": 210
+ },
+ "pilot-03": {
+  "name": "Toor dal 1 kg",
+  "eta": 3.2,
+  "base_per_day": 30,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "randomized",
+  "current_price_paise": 16000,
+  "cost_paise": 11800,
+  "order_up_to": 150
+ },
+ "pilot-04": {
+  "name": "Premium tea 250 g",
+  "eta": 2.5,
+  "base_per_day": 18,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "confounded",
+  "current_price_paise": 22000,
+  "cost_paise": 15000,
+  "order_up_to": 190
+ },
+ "pilot-05": {
+  "name": "Soap bar",
+  "eta": 1.8,
+  "base_per_day": 40,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "sparse",
+  "current_price_paise": 4500,
+  "cost_paise": 3000,
+  "order_up_to": 400
+ },
+ "pilot-06": {
+  "name": "Instant coffee 50 g",
+  "eta": 0.8,
+  "base_per_day": 15,
+  "alpha": 0.12,
+  "promo_lift": 1.25,
+  "weekday": [
+   0.9,
+   0.9,
+   0.95,
+   1.0,
+   1.15,
+   1.3,
+   1.1
+  ],
+  "design": "randomized",
+  "current_price_paise": 19000,
+  "cost_paise": 12000,
+  "order_up_to": 150
+ }
+}

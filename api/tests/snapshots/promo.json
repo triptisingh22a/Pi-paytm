@@ -1,0 +1,34 @@
+{
+  "inputs": {
+    "sku": "Atta",
+    "price": 100,
+    "cost": 93,
+    "discount": 0.1,
+    "baseline_units": 126.40625,
+    "episodes": 32
+  },
+  "assumptions": [
+    "Randomized synthetic matched control episodes; bootstrap whole episodes",
+    "Post-period loss treated as pull-forward; not a live causal claim"
+  ],
+  "formula_text": "Δπ=Q[(1+u)((1−d)p−c)−(p−c)]−Q f(p−c)",
+  "steps": [
+    {
+      "estimated_uplift": 0.7667,
+      "estimated_pull_forward": 0.0904
+    }
+  ],
+  "output": {
+    "verdict": "DON'T",
+    "incremental_profit": -1635.19,
+    "probability_loss": 1.0,
+    "reason": "Discount cost on existing sales and future displaced sales included"
+  },
+  "p10": -1661.89,
+  "p50": -1635.19,
+  "p90": -1608.5,
+  "data_tier": "B",
+  "data_quality_flags": [
+    "SIMULATED_DATA"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "correct": 55,
+  "total": 55,
+  "accuracy": 1.0,
+  "template_number_violations": 0,
+  "limitation": "Hand-authored keyword suite, not held-out general language understanding. Numeric guard evaluated on templates, not live LLM output."
+}

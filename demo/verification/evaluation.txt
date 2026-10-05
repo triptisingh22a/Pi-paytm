@@ -1,0 +1,68 @@
+python eval/peer_transfer.py
+{
+  "simulated": true,
+  "cutoff": "2026-08-28",
+  "evaluation": "Target merchant entirely excluded as donor; candidate outcomes excluded from target/peer similarity; completed future weeks only used for scoring.",
+  "cases": 490,
+  "weighted_peer_rmse_units_per_100_bills": 2.6477651455170443,
+  "type_item_mean_rmse_units_per_100_bills": 3.0748595743972182,
+  "no_history_zero_baseline_rmse": 21.715427624913136,
+  "model_predictive_p10_p90_coverage": 0.810204081632653,
+  "limitation": "Synthetic transfer diagnostic only. Generator exchangeability, seasonality and assortment selection differ from real shops. No causal replacement uplift or real-world calibration is established."
+}
+python eval/effect_recovery.py
+{
+  "recovery": [
+    {
+      "persona": "kirana",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.7667,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.0904,
+      "verdict": "DON'T"
+    },
+    {
+      "persona": "sweets",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.826,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.1042,
+      "verdict": "DO"
+    },
+    {
+      "persona": "electronics",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.7494,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.0723,
+      "verdict": "DO"
+    },
+    {
+      "persona": "vegetables",
+      "true_uplift": 0.8,
+      "estimated_uplift": 0.76,
+      "true_pull_forward": 0.1,
+      "estimated_pull_forward": 0.091,
+      "verdict": "DON'T"
+    }
+  ],
+  "chart": [
+    {
+      "name": "Planted",
+      "uplift": 0.8
+    },
+    {
+      "name": "Matched control",
+      "uplift": 0.7494
+    },
+    {
+      "name": "Naive pre/post",
+      "uplift": 2.6
+    }
+  ],
+  "note": "Recovery tolerance: 0.15 uplift and 0.10 pull-forward. Naive example assumes a 2\u00d7 festival baseline; it is illustrative, not a measured benchmark."
+}
+python eval/tool_selection.py
+{'correct': 55, 'total': 55, 'accuracy': 1.0, 'template_number_violations': 0, 'limitation': 'Hand-authored keyword suite, not held-out general language understanding. Numeric guard evaluated on templates, not live LLM output.'}
+python eval/wrapper_vs_munshi.py
+NOT DONE: no verified live baseline or genuine cached recording. No comparison claim made.

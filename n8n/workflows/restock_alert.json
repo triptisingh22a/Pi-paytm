@@ -1,0 +1,94 @@
+{
+  "name": "Munshi restock_alert \u2014 synthetic demo",
+  "nodes": [
+    {
+      "id": "schedule",
+      "name": "Daily 09:00 IST",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cover",
+      "name": "Calculate cover",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        0
+      ],
+      "parameters": {
+        "url": "http://api:8000/restock-alert/kirana",
+        "method": "GET",
+        "options": {
+          "timeout": 10000
+        }
+      }
+    },
+    {
+      "id": "propose",
+      "name": "Low cover proposal",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        600,
+        0
+      ],
+      "parameters": {
+        "url": "http://api:8000/channels/telegram/proposal/kirana?only_when_low_cover=true",
+        "method": "POST",
+        "options": {
+          "timeout": 10000
+        },
+        "sendBody": true,
+        "contentType": "json",
+        "specifyBody": "json",
+        "jsonBody": "{}"
+      }
+    }
+  ],
+  "connections": {
+    "Daily 09:00 IST": {
+      "main": [
+        [
+          {
+            "node": "Calculate cover",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculate cover": {
+      "main": [
+        [
+          {
+            "node": "Low cover proposal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata"
+  },
+  "pinData": {},
+  "tags": []
+}

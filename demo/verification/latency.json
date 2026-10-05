@@ -1,0 +1,31 @@
+{
+  "mode": "cached local TestClient",
+  "requests": [
+    {
+      "question": "10% discount doon?",
+      "elapsed_seconds": 0.0267,
+      "engine_latency_ms": 14.08
+    },
+    {
+      "question": "restock budget",
+      "elapsed_seconds": 0.0392,
+      "engine_latency_ms": 34.87
+    },
+    {
+      "question": "cash safe",
+      "elapsed_seconds": 0.0112,
+      "engine_latency_ms": 7.71
+    },
+    {
+      "question": "aaj kaisa raha",
+      "elapsed_seconds": 0.0081,
+      "engine_latency_ms": 5.55
+    },
+    {
+      "question": "similar shops",
+      "elapsed_seconds": 0.0089,
+      "engine_latency_ms": 6.2
+    }
+  ],
+  "not_a_production_benchmark": true
+}

@@ -1,0 +1,66 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: munshi
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-demo-only}
+      POSTGRES_DB: munshi
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U munshi]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  api:
+    build: ./api
+    environment:
+      DATABASE_URL: postgresql+psycopg://munshi:${POSTGRES_PASSWORD:-local-demo-only}@postgres:5432/munshi
+      DATA_DIR: /app/data
+      DEMO_MODE: ${DEMO_MODE:-cached}
+      ASSUMED_BORROWING_COST: ${ASSUMED_BORROWING_COST:-0.02}
+      GAP_THRESHOLD: ${GAP_THRESHOLD:-0.35}
+      SARVAM_API_KEY: ${SARVAM_API_KEY:-}
+      SARVAM_CHAT_ENABLED: ${SARVAM_CHAT_ENABLED:-true}
+      SARVAM_CHAT_MODEL: ${SARVAM_CHAT_MODEL:-sarvam-105b}
+      SARVAM_VOICE_ENABLED: ${SARVAM_VOICE_ENABLED:-false}
+      SARVAM_HTTP_PROXY: ${SARVAM_HTTP_PROXY:-}
+      SARVAM_STT_MODEL: ${SARVAM_STT_MODEL:-saaras:v4}
+      GEMINI_ENABLED: ${GEMINI_ENABLED:-false}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      SARVAM_MODEL: ${SARVAM_MODEL:-sarvam-105b}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID:-}
+      TELEGRAM_WEBHOOK_SECRET: ${TELEGRAM_WEBHOOK_SECRET:-}
+    volumes: [shopdata:/app/data]
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  web:
+    build: ./web
+    environment:
+      API_INTERNAL_URL: http://api:8000
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      api:
+        condition: service_healthy
+  n8n:
+    image: n8nio/n8n:2.41.6
+    environment:
+      N8N_HOST: localhost
+      N8N_PROTOCOL: http
+      GENERIC_TIMEZONE: Asia/Kolkata
+      N8N_SECURE_COOKIE: "false"
+    ports: ["127.0.0.1:5678:5678"]
+    volumes: [n8ndata:/home/node/.n8n, ./n8n/workflows:/workflows:ro]
+    profiles: [automation]
+volumes:
+  pgdata:
+  shopdata:
+  n8ndata:

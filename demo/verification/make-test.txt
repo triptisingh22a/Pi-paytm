@@ -1,0 +1,46 @@
+cd api && python -m pytest --cov=engine --cov=billing --cov=ai.sarvam_voice --cov=ai.sarvam_chat --cov-report=term-missing --cov-fail-under=85 -q
+........................................................................ [ 67%]
+..................................                                       [100%]
+=============================== warnings summary ===============================
+../../../../../root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /root/.local/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                     Stmts   Miss  Cover   Missing
+------------------------------------------------------
+ai/sarvam_chat.py           96      6    94%   95, 156, 171-172, 199, 206
+ai/sarvam_voice.py          67     11    84%   47-50, 94, 104, 118, 129, 156-157, 159
+billing/__init__.py          0      0   100%
+billing/agent.py           158     12    92%   65, 107, 138, 140-141, 227, 233, 239, 245-246, 264, 281
+billing/catalogue.py        12      0   100%
+billing/generate.py         96      4    96%   116, 156, 188-190
+billing/routes.py          105     13    88%   79, 84-91, 98-100, 188
+billing/services.py        211      9    96%   29, 218, 344, 347, 349, 356, 367, 424, 535
+billing/store.py            27      3    89%   15-17
+engine/__init__.py           0      0   100%
+engine/allocator.py         42      1    98%   45
+engine/cash_runway.py       24      0   100%
+engine/demand.py            37      0   100%
+engine/loan_nudge.py         8      0   100%
+engine/margins.py            6      0   100%
+engine/overview.py           7      0   100%
+engine/promo_uplift.py      21      0   100%
+engine/ranker.py            14      0   100%
+engine/receipts.py          15      0   100%
+------------------------------------------------------
+TOTAL                      946     59    94%
+Required test coverage of 85% reached. Total coverage: 93.76%
+106 passed, 1 warning in 41.02s
+cd api && python -m ruff check .
+All checks passed!
+cd api && python -m mypy engine/receipts.py app/schemas.py twin/state.py
+Success: no issues found in 3 source files
+cd web && npm run typecheck
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> munshi-web@1.0.0 typecheck
+> tsc --noEmit
